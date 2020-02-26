@@ -15,9 +15,12 @@ function Person(){
             {/* <button>{btn}</button> */}
             <button>{btnText}</button>
             {/* <h2>Jordan Walke</h2> */}
-            <h2>{name + " " + lastName}</h2>
-
+            {/* <h2>{name + " " + lastName}</h2> */}
+            <h2>{`${name} ${lastName}`}</h2>
             <p>Info</p>
+            {/* Math  */}
+            <p>{5+5}</p>
+            {/* <p>{let x = 6 }</p> */}
         </section>
     )
 }
