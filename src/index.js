@@ -1,43 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css'
+// import './index.css'
 
 // ES6, Nested Components and React tools
-function Books() {
+
+const btnText = "big button";
+function Person(){
+    // const btn = "search button";
+    const name = 'Jorden';
+    const lastName = 'Walke';
     return(
-        <section className="books">
-            <Book />
-            <Book />
-            <Book />
-            <Book />
-            <Book />
-        </section> 
-    );
-};
+        <section>
+            {/* <button>search</button> */}
+            {/* <button>{btn}</button> */}
+            <button>{btnText}</button>
+            {/* <h2>Jordan Walke</h2> */}
+            <h2>{name + " " + lastName}</h2>
 
-const Book = () => {
-    return (
-        <article className="book">
-            <CoverImage />
-            <Title />
-            <Author />
-        </article>
+            <p>Info</p>
+        </section>
     )
-};
+}
 
-const CoverImage = () => <img width="200 " src="https://images-na.ssl-images-amazon.com/images/I/91jIv4bCU0L.
-AC_UL200_SR200,200_.jpg" alt="coding" />
-
-const Title = () => (
-<h1 style={{ fontSize: "2rem", color: "purple" }}>Coding</h1>);
-const authorStyle = {
-    letterSpacing: "10px",
-    color: "green"
-};
-const Author = () => <p style={{authorStyle}}>by Michael Clark</p>
-
-
-ReactDOM.render(<Books />, document.getElementById("root"));
+ReactDOM.render(<Person />, document.getElementById("root"));
 
 // Note :   
 // 1st parameter that we're passing argument was what we gonna be rendering
