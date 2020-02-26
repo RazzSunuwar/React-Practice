@@ -28,6 +28,7 @@ const Person = props => {
         <article>
             <h1>{props.name}</h1>
             <p>{props.job}</p>
+            {/* <p>{props.age}</p> */}
             <hr />
         </article>
     )
