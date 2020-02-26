@@ -12,7 +12,7 @@ function Greating(){
 };
 
 const Person = () => <h2>Ryan Dahl</h2>;
-const Message = () => <p> Hi ! its me Ryan Dahl, Creator of NodeJs </p>;
+const Message = () => <p> Hi ! its me Ryan Dahl, Creator of NodeJs </p>; 
 
 ReactDOM.render(<Greating />, document.getElementById("root"));
 
