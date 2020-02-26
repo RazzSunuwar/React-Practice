@@ -10,18 +10,9 @@ import ReactDOM from 'react-dom';
 // formating
 function Greating(){
     return (
-        <React.Fragment>
-            <div>
-                <h1>Hello World</h1>
-                <ul>
-                    <li>
-                        <a a href="#" alt="">Hello people</a>
-                    </li>
-                
-                </ul>
-            </div>
-        
-        </React.Fragment>
+        <div>
+            <h1>Hello World</h1>
+        </div>
     )
 }
 
