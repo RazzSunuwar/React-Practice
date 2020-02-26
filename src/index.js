@@ -2,19 +2,36 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // ES6, Nested Components and React tools
-function Greating(){
-    return (
+function Books() {
+    return(
         <section>
-            <Person />
-            <Message />
-        </section>
+            <Book />
+            <Book />
+            <Book />
+            <Book />
+            <Book />
+        </section> 
     );
 };
 
-const Person = () => <h2>Ryan Dahl</h2>;
-const Message = () => <p> Hi ! its me Ryan Dahl, Creator of NodeJs </p>; 
+const Book = () => {
+    return (
+        <article className="book">
+            <CoverImage />
+            <Title />
+            <Author />
+        </article>
+    )
+};
 
-ReactDOM.render(<Greating />, document.getElementById("root"));
+const CoverImage = () => <img width="200 " src="https://images-na.ssl-images-amazon.com/images/I/91jIv4bCU0L.
+AC_UL200_SR200,200_.jpg" alt="coding" />
+
+const Title = () => <h1>Coding</h1>
+const Author = () => <p>by Michael Clark</p>
+
+
+ReactDOM.render(<Books />, document.getElementById("root"));
 
 // Note :   
 // 1st parameter that we're passing argument was what we gonna be rendering
