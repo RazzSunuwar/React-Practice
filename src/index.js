@@ -2,19 +2,28 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Setup components
-// stateless functional component
-// always return JSX
+// return single element
+// div / section / article
+// use camelCase for html attribute 
+// className instead of class 
+// close every element
+// formating
 function Greating(){
     return (
-        <div>
-        <h1>Hello World</h1>
-        </div>
+        <React.Fragment>
+            <div>
+                <h1>Hello World</h1>
+                <ul>
+                    <li>
+                        <a a href="#" alt="">Hello people</a>
+                    </li>
+                
+                </ul>
+            </div>
+        
+        </React.Fragment>
     )
 }
-// three arguments elements, propsObject, children
-// function Greating(){
-//     return React.createElement("div", {}, )
-// }
 
 ReactDOM.render(<Greating />, document.getElementById("root"));
 
