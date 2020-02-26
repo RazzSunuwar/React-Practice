@@ -1,24 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// Setup components
-// return single element
-// div / section / article
-// use camelCase for html attribute 
-// className instead of class 
-// close every element
-// formating
+// ES6, Nested Components and React tools
 function Greating(){
     return (
-        <div>
-            <h1>Hello World</h1>
-        </div>
-    )
-}
+        <section>
+            <Person />
+            <Message />
+        </section>
+    );
+};
+
+const Person = () => <h2>Ryan Dahl</h2>;
+const Message = () => <p> Hi ! its me Ryan Dahl, Creator of NodeJs </p>;
 
 ReactDOM.render(<Greating />, document.getElementById("root"));
 
-// Note :
+// Note :   
 // 1st parameter that we're passing argument was what we gonna be rendering
 // 2nd parameter is where is gonna be rendered.
 
