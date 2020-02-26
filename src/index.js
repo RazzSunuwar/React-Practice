@@ -5,35 +5,29 @@ import ReactDOM from 'react-dom';
 // PROPS (PROPERTIES) = ARGUMENTS TO COMPONENTS
 
 // Parameters and Arguments             //component in react are function
-function sayName(name){
-console.log(name);
-}
-sayName("Linus");
+// function sayName(name){
+// console.log(name);
+// }
+// sayName("Linus");
 
 function People(){
     return(
         <section>
-            <Person />
-            <Person1 />
+            <Person name="Linus Trovald" job="Software Engineer, Linux Developer" />
+            <Person name="Ryan Dahl" job="Software Engineer" age = "39" />
+            <Person name="Brad Traversy" job="Web Developer" />
+            <Person name="Mosh" job="React Developer" />
+            <Person name="Beau" job="JavaScript Developer" />
         </section>
     )
 }
 
-const Person = () => {
+const Person = props => {
+    console.log(props);
     return(
         <article>
-            <h1>Lunus Trovald</h1>
-            <p>Software Engineer, Linux Developer</p>
-            <hr />
-        </article>
-    )
-}
-
-const Person1 = () => {
-    return(
-        <article>
-            <h1>Ryan Dahl</h1>
-            <p>Software Engineer</p>
+            <h1>{props.name}</h1>
+            <p>{props.job}</p>
             <hr />
         </article>
     )
