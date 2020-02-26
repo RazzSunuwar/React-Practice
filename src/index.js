@@ -4,15 +4,17 @@ import ReactDOM from 'react-dom';
 // Setup components
 // stateless functional component
 // always return JSX
-// function Greating(){
-//     return (
-//         <h1>Hello World</h1>
-//     )
-// }
-// three arguments element, propsObject, childern
 function Greating(){
-    return React.createElement("div", {}, "Hello World")    
+    return (
+        <div>
+        <h1>Hello World</h1>
+        </div>
+    )
 }
+// three arguments elements, propsObject, children
+// function Greating(){
+//     return React.createElement("div", {}, )
+// }
 
 ReactDOM.render(<Greating />, document.getElementById("root"));
 
