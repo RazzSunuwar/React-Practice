@@ -2,30 +2,44 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import './index.css'
 
-// ES6, Nested Components and React tools
+// PROPS (PROPERTIES) = ARGUMENTS TO COMPONENTS
 
-const btnText = "big button";
-function Person(){
-    // const btn = "search button";
-    const name = 'Jorden';
-    const lastName = 'Walke';
+// Parameters and Arguments             //component in react are function
+function sayName(name){
+console.log(name);
+}
+sayName("Linus");
+
+function People(){
     return(
         <section>
-            {/* <button>search</button> */}
-            {/* <button>{btn}</button> */}
-            <button>{btnText}</button>
-            {/* <h2>Jordan Walke</h2> */}
-            {/* <h2>{name + " " + lastName}</h2> */}
-            <h2>{`${name} ${lastName}`}</h2>
-            <p>Info</p>
-            {/* Math  */}
-            <p>{5+5}</p>
-            {/* <p>{let x = 6 }</p> */}
+            <Person />
+            <Person1 />
         </section>
     )
 }
 
-ReactDOM.render(<Person />, document.getElementById("root"));
+const Person = () => {
+    return(
+        <article>
+            <h1>Lunus Trovald</h1>
+            <p>Software Engineer, Linux Developer</p>
+            <hr />
+        </article>
+    )
+}
+
+const Person1 = () => {
+    return(
+        <article>
+            <h1>Ryan Dahl</h1>
+            <p>Software Engineer</p>
+            <hr />
+        </article>
+    )
+}
+
+ReactDOM.render(<People />, document.getElementById("root"));
 
 // Note :   
 // 1st parameter that we're passing argument was what we gonna be rendering
