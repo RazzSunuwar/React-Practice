@@ -2,13 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import './index.css'
 
-// PROPS (PROPERTIES) = ARGUMENTS TO COMPONENTS
-
-// Parameters and Arguments             //component in react are function
-// function sayName(name){
-// console.log(name);
-// }
-// sayName("Linus");
+// CHILDREN PROPS
 
 function People(){
     const friends = [
@@ -20,7 +14,9 @@ function People(){
     ]
     return(
         <section>
-            <Person person={friends[0]}/>
+            <Person person={friends[0]}>
+            <p>Some info about</p>
+            </Person>
             <Person person={friends[1]}/>
             <Person person={friends[2]}/>
             <Person person={friends[3]}/>
@@ -29,11 +25,13 @@ function People(){
     )
 }
 
-const Person = props => {
-    const{name,job,age,company}= props.person
+const Person = ({children, person: { name, job, age, company}}) => {
+    // const{name,job,age,company} = props.person
+    // props.children
     return(
         <article>
             <h1>{name}</h1>
+            {children}
             <p>{job}</p>
             <p>{age}</p>
             <p>{company}</p>
