@@ -15,6 +15,7 @@ function People(){
     return(
         <section>
             <Person person={friends[0]}>
+            <h1>Some heading</h1>
             <p>Some info about</p>
             </Person>
             <Person person={friends[1]}/>
@@ -25,9 +26,10 @@ function People(){
     )
 }
 
-const Person = ({children, person: { name, job, age, company}}) => {
-    // const{name,job,age,company} = props.person
-    // props.children
+const Person = props => {
+    const{name,job,age,company} = props.person;
+    const { children} = props;
+    console.log(props);
     return(
         <article>
             <h1>{name}</h1>
