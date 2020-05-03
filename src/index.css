@@ -8,6 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #e5e5e5;
   /* background: red; */
+  text-align: center;
 }
 
 code {
