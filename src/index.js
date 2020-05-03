@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import People from './components/Props/myProps';
-import './index.css';
+import App from './App';
 
-ReactDOM.render(<People />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
 
 // Note :   
 // 1st parameter that we're passing argument was what we gonna be rendering
