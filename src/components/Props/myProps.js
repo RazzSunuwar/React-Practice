@@ -18,8 +18,8 @@ function People(){
             <Person person={friends[3]} />
             <Person person={friends[4]} />
         </section>
-    )
-}
+    );
+};
 
 const Person = props => {
     const{name,job,age,company} = props.person;
@@ -34,8 +34,8 @@ const Person = props => {
             <p>{company}</p>
             <hr />
         </article>
-    )
-}
+    );
+};
 
 export default People;
 
