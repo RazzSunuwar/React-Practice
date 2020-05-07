@@ -7,7 +7,7 @@ class LifecycleA extends Component{
     constructor(props){
         super(props)
         this.state = {
-            name: 'Viswas'
+            name: 'JavaScript'
         }
         console.log('LifecycleA constructor');
     }
@@ -20,12 +20,34 @@ class LifecycleA extends Component{
     static getDerivedStateFromProps(props, state){
         console.log('LifecycleA getDerivedStateFromProps')
         return null
-    }   
+    } 
+    
+    shouldComponentUpdate() {
+        console.log('LifecycleA shouldComponentUpdate')
+        return true
+    }
+
+    getSnapshotBeforeUpdate(prevProps, prevState) {
+        console.log('LifecycleA getSnapshotBeforeUpdate');
+        return null
+    }
+
+    componentDidUpdate() {
+        console.log('LifecycleA componentDidUpdate')
+    }
+
+    changeState = () => {
+        this.setState({
+            name: 'ReactJS'
+        })
+    }
+
     render(){
         console.log('LifecycleA render')
         return(
             <div>
                 <div>LifecycleA</div> {/* Parent component */}
+                <button onClick={this.changeState}>Change State</button>
                 <LifecycleB />  {/* Child component */}
             </div>
         )
