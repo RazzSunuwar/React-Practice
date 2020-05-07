@@ -5,7 +5,8 @@ import React from 'react';
 // import MyProps from './components/Destructuring/PropsFun';
 // import PropsClass from './components/Destructuring/PropsClass';
 // import FunctionEventH from './components/EventHandling/FunctionEventH';
-import ClassEventH from './components/EventHandling/ClassEventH';
+// import ClassEventH from './components/EventHandling/ClassEventH';
+import LifecycleA from './components/LifecycleMethods/LifecycleA';
 
 import './index.css';
 
@@ -18,7 +19,8 @@ function App() {
             {/* <MyProps name ="Ryan" heroname = "Superman" /> */}
             {/* <PropsClass name ="Bryan" heroname = "Spider man" /> */}
             {/* <FunctionEventH /> */}
-            <ClassEventH />
+            {/* <ClassEventH /> */}
+            <LifecycleA />
         </div>
     );
 };
