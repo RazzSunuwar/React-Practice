@@ -10,6 +10,7 @@ import React from 'react';
 // import Hero from './components/ErrorBoundary/Hero';
 // import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
 import ClickCounter from './components/HOC/ClickCounter';
+import HoverCounter from './components/HOC/HoverCounter';
 
 import './index.css';
 
@@ -37,6 +38,7 @@ function App() {
             </ErrorBoundary>     */}
 
             <ClickCounter />
+            <HoverCounter />
         </div>
     );
 };
