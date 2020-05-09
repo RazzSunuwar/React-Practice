@@ -7,8 +7,9 @@ import React from 'react';
 // import FunctionEventH from './components/EventHandling/FunctionEventH';
 // import ClassEventH from './components/EventHandling/ClassEventH';
 // import LifecycleA from './components/LifecycleMethods/LifecycleA';
-import Hero from './components/ErrorBoundary/Hero';
-import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
+// import Hero from './components/ErrorBoundary/Hero';
+// import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
+import ClickCounter from './components/HOC/ClickCounter';
 
 import './index.css';
 
@@ -23,7 +24,7 @@ function App() {
             {/* <FunctionEventH /> */}
             {/* <ClassEventH /> */}
             {/* <LifecycleA /> */}
-            <ErrorBoundary>
+            {/* <ErrorBoundary>
                 <Hero heroName = "Batman" />
             </ErrorBoundary> 
 
@@ -33,7 +34,9 @@ function App() {
              
             <ErrorBoundary>
                 <Hero heroName = "Joker" />
-            </ErrorBoundary>    
+            </ErrorBoundary>     */}
+
+            <ClickCounter />
         </div>
     );
 };
