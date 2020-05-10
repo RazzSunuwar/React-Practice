@@ -9,8 +9,11 @@ import React from 'react';
 // import LifecycleA from './components/LifecycleMethods/LifecycleA';
 // import Hero from './components/ErrorBoundary/Hero';
 // import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
-import ClickCounter from './components/HOC/ClickCounter';
-import HoverCounter from './components/HOC/HoverCounter';
+// import ClickCounter from './components/HOC/ClickCounter';
+// import HoverCounter from './components/HOC/HoverCounter';
+// import ClassCounter from './components/React-Hooks/useStateHook/ClassCounter';
+import HookCounter from './components/React-Hooks/useStateHook/HookCounter';
+
 
 import './index.css';
 
@@ -37,8 +40,10 @@ function App() {
                 <Hero heroName = "Joker" />
             </ErrorBoundary>     */}
 
-            <ClickCounter name ="Linux" />
-            <HoverCounter />
+            {/* <ClickCounter name ="Linux" /> */}
+            {/* <HoverCounter /> */}
+            {/* <ClassCounter /> */}
+            <HookCounter />
         </div>
     );
 };
