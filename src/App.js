@@ -12,7 +12,8 @@ import React from 'react';
 // import ClickCounter from './components/HOC/ClickCounter';
 // import HoverCounter from './components/HOC/HoverCounter';
 // import ClassCounter from './components/React-Hooks/useStateHook/ClassCounter';
-import HookCounter from './components/React-Hooks/useStateHook/HookCounter';
+// import HookCounter from './components/React-Hooks/useStateHook/HookCounter';
+import HookCOunterFour from './components/React-Hooks/useStateHook/HookCounterFour';
 
 
 import './index.css';
@@ -43,7 +44,8 @@ function App() {
             {/* <ClickCounter name ="Linux" /> */}
             {/* <HoverCounter /> */}
             {/* <ClassCounter /> */}
-            <HookCounter />
+            {/* <HookCounter /> */}
+            <HookCOunterFour />
         </div>
     );
 };
