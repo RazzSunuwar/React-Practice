@@ -13,7 +13,8 @@ import React from 'react';
 // import HoverCounter from './components/HOC/HoverCounter';
 // import ClassCounter from './components/React-Hooks/useStateHook/ClassCounter';
 // import HookCounter from './components/React-Hooks/useStateHook/HookCounter';
-import HookCOunterFour from './components/React-Hooks/useStateHook/HookCounterFour';
+// import HookCOunterFour from './components/React-Hooks/useStateHook/HookCounterFour';
+import HookCounterOne from './components/React-Hooks/useEffectHooks/HookCounterOne';
 
 
 import './index.css';
@@ -45,7 +46,8 @@ function App() {
             {/* <HoverCounter /> */}
             {/* <ClassCounter /> */}
             {/* <HookCounter /> */}
-            <HookCOunterFour />
+            {/* <HookCOunterFour /> */}
+            <HookCounterOne />
         </div>
     );
 };
