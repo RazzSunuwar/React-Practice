@@ -14,7 +14,8 @@ import React from 'react';
 // import ClassCounter from './components/React-Hooks/useStateHook/ClassCounter';
 // import HookCounter from './components/React-Hooks/useStateHook/HookCounter';
 // import HookCOunterFour from './components/React-Hooks/useStateHook/HookCounterFour';
-import HookCounterOne from './components/React-Hooks/useEffectHooks/HookCounterOne';
+// import HookCounterOne from './components/React-Hooks/useEffectHooks/HookCounterOne';
+import HookMouse from './components/React-Hooks/useEffectHooks/HookMouse';
 
 
 import './index.css';
@@ -47,7 +48,8 @@ function App() {
             {/* <ClassCounter /> */}
             {/* <HookCounter /> */}
             {/* <HookCOunterFour /> */}
-            <HookCounterOne />
+            {/* <HookCounterOne /> */}
+            <HookMouse />
         </div>
     );
 };
