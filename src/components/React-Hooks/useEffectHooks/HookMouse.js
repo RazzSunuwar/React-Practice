@@ -14,7 +14,14 @@ function HookMouse() {
     useEffect(() => {
         console.log('useEffect called')
         window.addEventListener('mouseover', logMousePosition)
+
+            // cleanup function for MouseContainer
+            return () => {
+                console.log('Component unmounting code')
+                window.removeEventListener('mouseover', logMousePosition)
+            }
     }, [])  //this particular effect (empty array) doesn't depend on any prop or state
+
 
     return (
         <div>
