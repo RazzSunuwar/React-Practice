@@ -19,65 +19,67 @@ import React from 'react';
 // import MouseCounter from './components/React-Hooks/useEffectHooks/MouseContainer';
 // import IntervalHookCounter from './components/React-Hooks/useEffectHooks/IntervalHookCounter';
 // import DataFecthing from './components/React-Hooks/DataFetching/DataFetching';
-import ComponentC from './components/React-Hooks/UseContextHooks/ComponentC';
+// import ComponentC from './components/React-Hooks/UseContextHooks/ComponentC';
+import CounterOne from './components/React-Hooks/useReducerHook/CounterOne';
 
 
 import './index.css';
 
-// function App() {
-//     return (
-//         <div>
-//             {/* <People />  */}
-//             {/* <Message /> */}
-//             {/* <Counter /> */}
-//             {/* <MyProps name ="Ryan" heroname = "Superman" /> */}
-//             {/* <PropsClass name ="Bryan" heroname = "Spider man" /> */}
-//             {/* <FunctionEventH /> */}
-//             {/* <ClassEventH /> */}
-//             {/* <LifecycleA /> */}
-//             {/* <ErrorBoundary>
-//                 <Hero heroName = "Batman" />
-//             </ErrorBoundary> 
-
-//             <ErrorBoundary>
-//                 <Hero heroName = "Superman" /> 
-//             </ErrorBoundary> 
-             
-//             <ErrorBoundary>
-//                 <Hero heroName = "Joker" />
-//             </ErrorBoundary>     */}
-
-//             {/* <ClickCounter name ="Linux" /> */}
-//             {/* <HoverCounter /> */}
-//             {/* <ClassCounter /> */}
-//             {/* <HookCounter /> */}
-//             {/* <HookCOunterFour /> */}
-//             {/* <HookCounterOne /> */}
-//             {/* <HookMouse /> */}
-//             {/* <MouseCounter /> */}
-//             {/* <IntervalHookCounter /> */}
-//             {/* <DataFecthing/> */}
-//         </div>
-//     );
-// };
-
-
-
-// Use context
-export const UserContext = React.createContext()
-export const ChannelContext = React.createContext()
-
 function App() {
     return (
-        <div className="App">
-            <UserContext.Provider value={'React'} >
-                <ChannelContext.Provider value={'JavaScript'}>
-                <ComponentC />
-                </ChannelContext.Provider>
-            </UserContext.Provider>
+        <div>
+            {/* <People />  */}
+            {/* <Message /> */}
+            {/* <Counter /> */}
+            {/* <MyProps name ="Ryan" heroname = "Superman" /> */}
+            {/* <PropsClass name ="Bryan" heroname = "Spider man" /> */}
+            {/* <FunctionEventH /> */}
+            {/* <ClassEventH /> */}
+            {/* <LifecycleA /> */}
+            {/* <ErrorBoundary>
+                <Hero heroName = "Batman" />
+            </ErrorBoundary> 
+
+            <ErrorBoundary>
+                <Hero heroName = "Superman" /> 
+            </ErrorBoundary> 
+             
+            <ErrorBoundary>
+                <Hero heroName = "Joker" />
+            </ErrorBoundary>     */}
+
+            {/* <ClickCounter name ="Linux" /> */}
+            {/* <HoverCounter /> */}
+            {/* <ClassCounter /> */}
+            {/* <HookCounter /> */}
+            {/* <HookCOunterFour /> */}
+            {/* <HookCounterOne /> */}
+            {/* <HookMouse /> */}
+            {/* <MouseCounter /> */}
+            {/* <IntervalHookCounter /> */}
+            {/* <DataFecthing/> */}
+            <CounterOne />
         </div>
-    )
-}
+    );
+};
+
+
+
+// // Use context
+// export const UserContext = React.createContext()
+// export const ChannelContext = React.createContext()
+
+// function App() {
+//     return (
+//         <div className="App">
+//             <UserContext.Provider value={'React'} >
+//                 <ChannelContext.Provider value={'JavaScript'}>
+//                 <ComponentC />
+//                 </ChannelContext.Provider>
+//             </UserContext.Provider>
+//         </div>
+//     )
+// }
 
 
 
