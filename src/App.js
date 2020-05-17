@@ -21,7 +21,8 @@ import React from 'react';
 // import DataFecthing from './components/React-Hooks/DataFetching/DataFetching';
 // import ComponentC from './components/React-Hooks/UseContextHooks/ComponentC';
 // import CounterOne from './components/React-Hooks/useReducerHook/CounterOne';
-import CounterTwo from './components/React-Hooks/useReducerHook/CounterTwo';
+// import CounterTwo from './components/React-Hooks/useReducerHook/CounterTwo';
+import CounterThree from './components/React-Hooks/useReducerHook/CounterThree';
 
 
 import './index.css';
@@ -60,7 +61,8 @@ function App() {
             {/* <IntervalHookCounter /> */}
             {/* <DataFecthing/> */}
             {/* <CounterOne /> */}
-            <CounterTwo />
+            {/* <CounterTwo /> */}
+            <CounterThree />
         </div>
     );
 };
