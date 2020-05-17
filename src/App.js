@@ -20,7 +20,8 @@ import React from 'react';
 // import IntervalHookCounter from './components/React-Hooks/useEffectHooks/IntervalHookCounter';
 // import DataFecthing from './components/React-Hooks/DataFetching/DataFetching';
 // import ComponentC from './components/React-Hooks/UseContextHooks/ComponentC';
-import CounterOne from './components/React-Hooks/useReducerHook/CounterOne';
+// import CounterOne from './components/React-Hooks/useReducerHook/CounterOne';
+import CounterTwo from './components/React-Hooks/useReducerHook/CounterTwo';
 
 
 import './index.css';
@@ -58,7 +59,8 @@ function App() {
             {/* <MouseCounter /> */}
             {/* <IntervalHookCounter /> */}
             {/* <DataFecthing/> */}
-            <CounterOne />
+            {/* <CounterOne /> */}
+            <CounterTwo />
         </div>
     );
 };
