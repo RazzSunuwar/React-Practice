@@ -22,7 +22,8 @@ import React from 'react';
 // import ComponentC from './components/React-Hooks/UseContextHooks/ComponentC';
 // import CounterOne from './components/React-Hooks/useReducerHook/CounterOne';
 // import CounterTwo from './components/React-Hooks/useReducerHook/CounterTwo';
-import CounterThree from './components/React-Hooks/useReducerHook/CounterThree';
+// import CounterThree from './components/React-Hooks/useReducerHook/CounterThree';
+import App1 from './components/React-Hooks/useReducerWithuseContext/App1';
 
 
 import './index.css';
@@ -62,7 +63,10 @@ function App() {
             {/* <DataFecthing/> */}
             {/* <CounterOne /> */}
             {/* <CounterTwo /> */}
-            <CounterThree />
+            {/* <CounterThree /> */}
+
+            {/* useReducer with useContext */}
+            <App1 />
         </div>
     );
 };
