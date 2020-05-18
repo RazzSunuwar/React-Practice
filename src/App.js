@@ -23,7 +23,8 @@ import React from 'react';
 // import CounterOne from './components/React-Hooks/useReducerHook/CounterOne';
 // import CounterTwo from './components/React-Hooks/useReducerHook/CounterTwo';
 // import CounterThree from './components/React-Hooks/useReducerHook/CounterThree';
-import App1 from './components/React-Hooks/useReducerWithuseContext/App1';
+// import App1 from './components/React-Hooks/useReducerWithuseContext/App1';
+import DataFetchingOne from './components/React-Hooks/useReducerVSuseState/DataFetchingOne';
 
 
 import './index.css';
@@ -66,7 +67,8 @@ function App() {
             {/* <CounterThree /> */}
 
             {/* useReducer with useContext */}
-            <App1 />
+            {/* <App1 /> */}
+            <DataFetchingOne />
         </div>
     );
 };
